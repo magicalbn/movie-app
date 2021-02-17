@@ -42,7 +42,7 @@ searchTV = async (query) => {
 
 //routes
 
-router.get('/movie/:query', (req, res) => {
+router.get('/film/:query', (req, res) => {
     searchMovies(req.params.query).then(response => {
         if (response.results) {
             const moviesData = response.results.map(each => {

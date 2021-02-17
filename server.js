@@ -17,8 +17,8 @@ app.prepare().then(()=>{
 
     server.use(express.json())
 
-    server.use('/movie',movieRouter);
-    server.use('/tv',tvRouter);
+    server.use('/film',movieRouter);
+    server.use('/tvshow',tvRouter);
     server.use('/search',searchRouter);
 
 
