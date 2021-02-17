@@ -9,6 +9,8 @@ const app = next({ dev });
 const handler = app.getRequestHandler();
 
 const movieRouter = require('./router/moviesRouter')
+const tvRouter = require('./router/tvRouter')
+const searchRouter = require('./router/searchRouter')
 
 app.prepare().then(()=>{
     const server = express()
@@ -16,6 +18,8 @@ app.prepare().then(()=>{
     server.use(express.json())
 
     server.use('/movie',movieRouter);
+    server.use('/tv',tvRouter);
+    server.use('/search',searchRouter);
 
 
 
