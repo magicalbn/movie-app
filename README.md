@@ -4,6 +4,6 @@
 
 Search for you favourite Movies and TV shows
 
-Framework: React,Next,Express.
+Framework: React, Next, Express, Boostrap for react
 
 API: https://developers.themoviedb.org/3/getting-started/introduction
