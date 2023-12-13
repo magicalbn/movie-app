@@ -4,7 +4,7 @@ require("dotenv").config();
 
 let router = express.Router();
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_KEY = process.env.API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
 const MOVIE_SEARCH_URL = "https://api.themoviedb.org/3/search";
 const IMAGE_URL = "http://image.tmdb.org/t/p/w300";
